@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function AttendancePage() {
+function AttendanceContent() {
     const searchParams = useSearchParams();
     const studentId = searchParams.get('studentId');
 
@@ -151,5 +151,13 @@ export default function AttendancePage() {
                 </button>
             </div>
         </div>
+    );
+}
+
+export default function AttendancePage() {
+    return (
+        <Suspense fallback={<div className="p-6">Loading...</div>}>
+            <AttendanceContent />
+        </Suspense>
     );
 }

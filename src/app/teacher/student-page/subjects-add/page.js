@@ -247,7 +247,7 @@ export default function SubjectsAdd() {
                                         <span className="text-xs font-bold text-gray-700">{index + 1}</span>
                                     </div>
                                     <p className="text-sm text-gray-600">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
                                     </p>
                                 </div>
                                 <button 
